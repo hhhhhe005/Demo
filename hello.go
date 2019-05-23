@@ -2,8 +2,10 @@ package Demo
 
 import (
 	"fmt"
+	"Demo/methods"
 )
 
 func Hello(name string){
-	fmt.Printf("hello %s !\n",name)
+	n := methods.GetHello(name)
+	fmt.Printf("hello %s !\n",n)
 }
